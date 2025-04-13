@@ -1,0 +1,589 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Container */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Buttons */
+.btn,
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-login {
+  background: transparent;
+  border: none;
+  background-color: #ff4e1f;
+  color: white;
+}
+
+.btn-register {
+  border: 2px solid #000000;
+  background: transparent;
+}
+
+.btn-search {
+  background-color: #ff4e1f;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+}
+
+/* Header */
+.header {
+  background-color: rgb(196, 194, 194);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 15px 0;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 100px;
+  align-items: center;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 24px;
+  text-transform: uppercase;
+}
+.nav-menu li :hover,
+.btn-login:hover {
+  color: white;
+  border: 10px solid #ff4e1f;
+  border-radius: 100px;
+  background-color: #ff4e1f;
+  transition: 0.3s;
+  align-items: center;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.mobile-menu-toggle {
+  display: none;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  min-height: 500px;
+  background-image: url("/FrontEnd/img/vinh-ha-long.png");
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+
+.banner-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.banner-content p {
+  font-size: 20px;
+  margin-bottom: 32px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.banner-content span {
+  color: #ff4e1f;
+  font-family: mv boli;
+  line-height: 220px;
+  font-size: 70px;
+  font-weight: 100px;
+}
+
+.search-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #323534;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 8px;
+}
+
+.tab {
+  flex: 1;
+  padding: 12px;
+  background: transparent;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tab.active {
+  background-color: #ff4e1f;
+  color: white;
+  border-color: #ff4e1f;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.form-group input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Section Styles */
+section {
+  padding: 60px 0;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Featured Cars */
+.featured-cars {
+  background-color: #f7f7f7;
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.car-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.car-image {
+  position: relative;
+  height: 180px;
+}
+
+.car-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.car-badges {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.badge {
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  color: white;
+}
+
+.no-deposit {
+  background-color: #ff4e1f;
+}
+
+.car-details {
+  padding: 16px;
+}
+
+.car-details h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.car-specs,
+.car-rating {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.car-rating {
+  margin-top: 16px;
+}
+
+.car-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-top: 1px solid #eee;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+}
+
+.discount-price {
+  color: #bd6144;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.hourly-price {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Popular Destinations */
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.destination-card {
+  position: relative;
+  width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.destination-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.destination-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: white;
+}
+
+.airport-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.airport-item {
+  background-color: #f7f7f7;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Features */
+.features {
+  background-color: #f7f7f7;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+.feature-card {
+  background-color: white;
+  padding: 32px 24px;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.feature-icon {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(98, 199, 153, 0.1);
+  color: #ff4e1f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  font-size: 24px;
+}
+.feature-icon img {
+  width: 400px;
+  padding: 10px;
+}
+
+.feature-card h3 {
+  padding-top: 35px;
+  margin-bottom: 12px;
+}
+
+/* Services */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.service-card {
+  display: flex;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.service-card img {
+  align-items: center;
+  margin: 40px 0 10px;
+}
+
+.service-content {
+  flex: 1;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-content h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.service-content p {
+  margin-bottom: 24px;
+  color: #666;
+}
+
+.service-content .btn {
+  background-color: #ff4e1f;
+  color: white;
+  width: fit-content;
+}
+
+.service-image {
+  flex: 1;
+  min-height: 250px;
+}
+
+.service-image img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+/* Footer */
+.footer {
+  background-color: #f7f7f7;
+  padding: 60px 0 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 16px;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.link-group {
+  min-width: 200px;
+}
+
+.contact-info {
+  margin-bottom: 16px;
+}
+
+.contact-info div {
+  margin-bottom: 12px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #eee;
+  border-radius: 50%;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #ff4e1f;
+  color: white;
+}
+
+.link-group h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.link-group ul li {
+  margin-bottom: 12px;
+}
+
+.link-group a:hover {
+  color: #ff4e1f;
+}
+
+.payment-methods {
+  margin-bottom: 40px;
+}
+
+.payment-methods h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.payment-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.payment-icons img {
+  height: 46px;
+}
+
+.copyright {
+  text-align: center;
+  color: #999;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .auth-buttons {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .banner-content h1 {
+    font-size: 32px;
+  }
+
+  .search-form {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    flex-direction: column;
+  }
+
+  .service-image {
+    order: -1;
+  }
+}
