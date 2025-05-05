@@ -1,0 +1,1119 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ----------------------------------Bố cục trang------------------------------- */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ---------------------------------Nút----------------------------- */
+.btn,
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-login {
+  background: transparent;
+  border: none;
+  background-color: #ff4e1f;
+  color: white;
+}
+
+.btn-register {
+  border: 2px solid #000000;
+  background: transparent;
+}
+.btn-register:hover {
+  border-radius: 20px;
+}
+
+.btn-search {
+  background-color: #ff4e1f;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+}
+
+/* --------------------------------------Phần đầu------------------------------- */
+.header {
+  background-color: rgb(196, 194, 194);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 15px 0;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 100px;
+  align-items: center;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 24px;
+  text-transform: uppercase;
+}
+.nav-menu li :hover,
+.btn-login:hover {
+  color: white;
+  border: 8px solid #ff4e1f;
+  border-radius: 100px;
+  background-color: #ff4e1f;
+  transition: 0.3s;
+  align-items: center;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.mobile-menu-toggle {
+  display: none;
+}
+
+/* ------------------------------Phần thân đầu ở trang chủ--------------------------------- */
+.banner {
+  position: relative;
+  min-height: 500px;
+  background-image: url("/FrontEnd/img/vinhalong.jpg");
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+
+.banner-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.banner-content p {
+  font-size: 20px;
+  margin-bottom: 32px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.banner-content span {
+  color: #ff4e1f;
+  font-family: mv boli;
+  line-height: 220px;
+  font-size: 70px;
+  font-weight: 100px;
+}
+
+.search-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #323534;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 8px;
+}
+
+.tab {
+  flex: 1;
+  padding: 12px;
+  background: transparent;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tab.active {
+  background-color: #ff4e1f;
+  color: white;
+  border-color: #ff4e1f;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.form-group input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Section Styles */
+section {
+  padding: 60px 0;
+}
+
+.section-title {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* -------------------------------Phần thẻ xe----------------------------------- */
+.featured-cars {
+  background-color: #f7f7f7;
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.car-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.car-image {
+  position: relative;
+  height: 180px;
+}
+
+.car-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.car-badges {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.badge {
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  color: white;
+}
+
+.no-deposit {
+  background-color: #ff4e1f;
+}
+
+.car-details {
+  padding: 16px;
+}
+
+.car-details h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.car-specs,
+.car-rating {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.car-rating {
+  margin-top: 16px;
+}
+
+.car-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-top: 1px solid #eee;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+}
+
+.discount-price {
+  color: #ff4e1f;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.hourly-price {
+  font-size: 14px;
+  color: black;
+}
+
+/* ------------------------------------Địa điểm nổi bật----------------------------------- */
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.destination-card {
+  position: relative;
+  width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.destination-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.destination-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: white;
+}
+
+.airport-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.airport-item {
+  background-color: #f7f7f7;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* -------------------------------Ưu điểm----------------------------------- */
+.features {
+  background-color: #f7f7f7;
+}
+.img-icon img {
+  margin-top: 50px;
+  max-width: 300px;
+}
+.imggggg img {
+  margin-top: 30px;
+  max-width: 300px;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+.feature-card {
+  background-color: white;
+  padding: 32px 24px;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.feature-icon {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(98, 199, 153, 0.1);
+  color: #ff4e1f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  font-size: 24px;
+}
+.feature-icon img {
+  width: 380px;
+  padding: 10px;
+}
+
+.feature-card h3 {
+  padding-top: 35px;
+  margin-bottom: 12px;
+}
+/* -----------------------------------Hướng dẫn đặt xe------------------------------------ */
+.carbookingguide {
+  padding: 40px 0;
+  background-color: white;
+}
+
+.carbookingguide .section-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.sizeh3 {
+  padding-top: 65px;
+}
+
+.imggg img {
+  padding-top: 35px;
+}
+.carbookingguide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 32px;
+  justify-items: center;
+}
+
+.carbookingguide-icon {
+  text-align: center;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.carbookingguide img {
+  width: 300px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.carbookingguide-icon h3 {
+  font-size: 20px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.carbookingguide-icon span {
+  color: #ff4e1f;
+  font-weight: bold;
+}
+
+.carbookingguide-icon p {
+  font-size: 16px;
+  color: #555;
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+/* ---------------------------------Dịch vụ------------------------------------- */
+.services {
+  background-color: #f7f7f7;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.service-card {
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.service-card img {
+  align-items: center;
+  margin: 40px 0 10px;
+}
+
+.service-content {
+  flex: 1;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-content h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.service-content p {
+  margin-bottom: 24px;
+  color: #666;
+}
+
+.service-content .btn {
+  background-color: #ff4e1f;
+  color: white;
+  width: fit-content;
+}
+
+.service-image {
+  flex: 1;
+  min-height: 250px;
+}
+
+.service-image img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* ----------------------------------Phần chân------------------------------- */
+.footer {
+  background-color: rgb(196, 194, 194);
+  padding: 60px 0 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 16px;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.link-group {
+  min-width: 200px;
+}
+
+.contact-info {
+  margin-bottom: 16px;
+}
+
+.contact-info div {
+  margin-bottom: 12px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #eee;
+  border-radius: 50%;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #ff4e1f;
+  color: white;
+}
+
+.link-group h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.link-group ul li {
+  margin-bottom: 12px;
+}
+
+.link-group a:hover {
+  color: #ff4e1f;
+}
+
+.payment-methods {
+  margin-bottom: 40px;
+}
+
+.payment-methods h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.payment-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.payment-icons img {
+  height: 46px;
+}
+
+.copyright {
+  text-align: center;
+  color: black;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+.email a:hover {
+  color: #ff4e1f;
+}
+
+.intro-section {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+/* --------------------------Giới thiệu--------------------------- */
+.intro-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.intro-left {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 40px;
+  margin-top: 50px;
+}
+
+.intro-left span {
+  font-size: 55px;
+  color: #ff4e1f;
+  font-family: "MV Boli", cursive;
+}
+
+.intro-left h1 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.3;
+  color: #000;
+}
+
+.intro-right {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+}
+
+.intro-img {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.intro-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  filter: brightness(60%);
+}
+
+.intro-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  color: white;
+  font-size: 25px;
+  line-height: 1.6;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0;
+  border-radius: 10px;
+}
+
+.intro-text p {
+  margin: 5px;
+}
+
+/* Lịch sử ra đời */
+.history-grid {
+  display: flex;
+  gap: 20px;
+  padding: 40px 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #f7f7f7;
+}
+
+.history-box {
+  width: 320px;
+  height: 450px;
+  background-size: 300% 100%;
+  background-position: left center;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+}
+
+.history-box:nth-child(1) {
+  background-position: left center;
+}
+
+.history-box:nth-child(4) {
+  background-position: right center;
+}
+
+.history-box:nth-child(3) {
+  background-position: center center;
+}
+
+.history-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column left;
+  justify-content: flex-start;
+  text-align: left;
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.history-overlay h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #ff4e1f;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin-bottom: 120px;
+}
+
+.history-overlay p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #f0f0f0;
+  margin: 10px;
+}
+
+.history-title {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Thue6 xe cùng DriveNow */
+.rentalcar {
+  background-color: #f7f7f7;
+}
+.rentalcar-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.rentalcar-card {
+  position: relative;
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background-image: url(/FrontEnd/img/phong-cảnh.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+}
+.rentalcar-content {
+  flex: 1;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.rentalcar-content h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: white;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+.rentalcar-content p {
+  margin-bottom: 70px;
+  color: white;
+}
+
+.rentalcar-content .btn {
+  background-color: #ff4e1f;
+  color: white;
+  width: fit-content;
+}
+.rentalcar-content .btn:hover{
+  background-color: #85716c;
+  border-radius: 20px;
+  transform: translateY(-10px);
+}
+
+/* ---------------------Chính sách--------------------------- */
+/* Chính sách và quy định */
+.policy-section {
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.policy-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ff4e1f;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.policy-subtitle {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.policy-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.policy-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.policy-left h3 {
+  color: #ff4e1f;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.policy-left ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.policy-left ul li {
+  margin-bottom: 8px;
+}
+
+.policy-right {
+  flex: 1;
+  min-width: 300px;
+  padding-left: 20px;
+}
+
+.policy-right img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Quy chế hoạt động */
+.regulation-section {
+  padding: 60px 20px;
+  background-color: #f7f7f7;
+}
+
+.regulation-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ff4e1f;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.regulation-subtitle {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.regulation-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.regulation-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.regulation-left h3 {
+  color: #ff4e1f;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.regulation-left ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.regulation-left ul li {
+  margin-bottom: 8px;
+}
+
+.regulation-right {
+  flex: 1;
+  min-width: 300px;
+  padding-left: 20px;
+}
+
+.regulation-right img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* -----------------------------------Đăng nhập-------------------------------- */
+
+.login-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #f9f9f9, #f1f1f1);
+}
+
+.login-container {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  background-image: url(/FrontEnd/img/backround1.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ff4e1f;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: 0.3s ease;
+}
+
+.login-container input:hover {
+  border-color: #ff4e1f;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff4e1f;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #85716c;
+}
+
+.login-container p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-container a {
+  color: #ff4e1f;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+  color: #85716c;
+}
+
+/* -------------------------------Đăng kí--------------------------- */
+
+.register-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #f9f9f9, #f1f1f1);
+}
+
+.register-container {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  background-image: url(/FrontEnd/img/backround1.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.register-container h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #ff4e1f;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.register-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: 0.3s ease;
+}
+
+.register-container input:hover {
+  border-color: #ff4e1f;
+}
+
+.register-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff4e1f;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+
+.register-container button:hover {
+  background-color: #85716c;
+}
+
+.register-container p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.register-container a {
+  color: #ff4e1f;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.register-container a:hover {
+  text-decoration: underline;
+  color: #85716c;
+}

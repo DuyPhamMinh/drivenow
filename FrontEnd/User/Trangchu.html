@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DriveNow - Nền tảng cho thuê xe trực tuyến</title>
+    <link rel="stylesheet" href="/FrontEnd/css/styles.css" />
+    <!-- Kiểu cho các icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/FrontEnd/img/DriveNow-XoaPhong.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+
+  </head>
+  <body>
+    <!-- Phần đầu -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="/FrontEnd/User/Trangchu.html">
+              <img src="/FrontEnd/img/DriveNow-XoaPhong.png" alt="DriveNow" loading="lazy"/>
+            </a>
+          </div>
+          <nav class="nav-menu">
+            <ul>
+              <li><a href="/FrontEnd/User/Trangchu.html">Trang chủ</a></li>
+              <li><a href="/FrontEnd/User/Gioithieu.html">Giới thiệu</a></li>
+              <li><a href="#">Trở thành chủ xe</a></li>
+            </ul>
+          </nav>
+          <div class="auth-buttons">
+            <button class="btn-login"><a href="/FrontEnd/User/Dangnhap.html">Đăng nhập</a></button>
+            <button class="btn-register"><a href="/FrontEnd/User/Dangki.html">Đăng ký</a></button>
+          </div>
+          <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Khung giới thiệu  -->
+    <section class="banner">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="banner-content">
+          <h1>
+            <span>DriveNow </span>Luôn Đồng Hành Cùng Bạn<br/>Trên Mọi Hành Trình
+          </h1>
+          <p>
+            Trải nghiệm sự khác biệt từ hơn 10.000 xe giao ngay mọi miền Việt
+            Nam
+          </p>
+
+          <div class="search-box">
+            <div class="tabs">
+              <button class="tab active">Xe tự lái</button>
+              <button class="tab">Xe có tài xế</button>
+              <button class="tab">Thuê xe dài hạn</button>
+            </div>
+            <div class="search-form">
+              <div class="form-group">
+                <label>Địa điểm</label>
+                <input type="text" placeholder="TP. Hồ Chí Minh" />
+              </div>
+              <div class="form-group">
+                <label>Thời gian thuê</label>
+                <input
+                  type="text"
+                  placeholder="21:00, 21/03/2025 - 20:00, 22/03/2025"
+                />
+              </div>
+              <button class="btn-search">Tìm xe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trưng bày xe -->
+    <section class="featured-cars">
+      <div class="container">
+        <h2 class="section-title">Xe Dành Cho Bạn</h2>
+        <div class="car-grid">
+          <!-- Xe 1 -->
+          <div class="car-card">
+            <div class="car-image">
+              <img src="/FrontEnd/img/bmw-i8.png" alt="BMW i8 2016" loading="lazy"/>
+              <div class="car-badges">
+                <span class="badge no-deposit">Miễn thế chấp</span>
+              </div>
+            </div>
+            <div class="car-details">
+              <h3>BMW i8 2016</h3>
+              <div class="car-specs">
+                <span>Hộp số 6AT</span>
+                <span>•</span>
+                <span>2 chỗ</span>
+                <span>•</span>
+                <span>Xăng</span>
+              </div>
+              <div class="car-location">Quận Bình Thạnh, TP. Hồ Chí Minh</div>
+              <div class="car-rating">
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <span>5.0</span>
+                </div>
+                <div class="trips">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>11 chuyến</span>
+                </div>
+              </div>
+            </div>
+            <div class="car-footer">
+              <div class="price">
+                <div class="original-price">2900K/ngày</div>
+                <div class="discount-price">2250K/ngày</div>
+              </div>
+              <div class="hourly-price">562K giá 3 giờ</div>
+            </div>
+          </div>
+
+            <!-- Xe 2 -->
+          <div class="car-card">
+            <div class="car-image">
+              <img src="/FrontEnd/img/Mercedes C200 2021.jpg" alt="Mercedes C200 2021" loading="lazy"/>
+              <div class="car-badges">
+                <span class="badge no-deposit">Miễn thế chấp</span>
+              </div>
+            </div>
+            <div class="car-details">
+              <h3>Mercedes C200 2021</h3>
+              <div class="car-specs">
+                <span>Hộp số 9AT</span>
+                <span>•</span>
+                <span>5 chỗ</span>
+                <span>•</span>
+                <span>Xăng</span>
+              </div>
+              <div class="car-location">Quận 1, TP. Hồ Chí Minh</div>
+              <div class="car-rating">
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <span>4.9</span>
+                </div>
+                <div class="trips">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>18 chuyến</span>
+                </div>
+              </div>
+            </div>
+            <div class="car-footer">
+              <div class="price">
+                <div class="original-price">2500K/ngày</div>
+                <div class="discount-price">1990K/ngày</div>
+              </div>
+              <div class="hourly-price">490K giá 3 giờ</div>
+            </div>
+          </div>
+          
+          <!-- Xe 3 -->
+          <div class="car-card">
+            <div class="car-image">
+              <img src="/FrontEnd/img/Toyota-Vios-2020.jpg" alt="Toyota Vios 2020" loading="lazy"/>
+              <div class="car-badges">
+                <span class="badge no-deposit">Miễn thế chấp</span>
+              </div>
+            </div>
+            <div class="car-details">
+              <h3>Toyota Vios 2020</h3>
+              <div class="car-specs">
+                <span>Hộp số CVT</span>
+                <span>•</span>
+                <span>5 chỗ</span>
+                <span>•</span>
+                <span>Xăng</span>
+              </div>
+              <div class="car-location">Quận Tân Bình, TP. Hồ Chí Minh</div>
+              <div class="car-rating">
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <span>4.7</span>
+                </div>
+                <div class="trips">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>35 chuyến</span>
+                </div>
+              </div>
+            </div>
+            <div class="car-footer">
+              <div class="price">
+                <div class="original-price">950K/ngày</div>
+                <div class="discount-price">790K/ngày</div>
+              </div>
+              <div class="hourly-price">210K giá 3 giờ</div>
+            </div>
+          </div>
+          
+          <!-- Xe 4 -->
+          <div class="car-card">
+            <div class="car-image">
+              <img src="/FrontEnd/img/VinFast VF8 2023.jpg" alt="VinFast VF8 2023" loading="lazy"/>
+              <div class="car-badges">
+                <span class="badge no-deposit">Miễn thế chấp</span>
+              </div>
+            </div>
+            <div class="car-details">
+              <h3>VinFast VF8 2023</h3>
+              <div class="car-specs">
+                <span>Hộp số điện</span>
+                <span>•</span>
+                <span>5 chỗ</span>
+                <span>•</span>
+                <span>Điện</span>
+              </div>
+              <div class="car-location">Thủ Đức, TP. Hồ Chí Minh</div>
+              <div class="car-rating">
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <span>5.0</span>
+                </div>
+                <div class="trips">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>7 chuyến</span>
+                </div>
+              </div>
+            </div>
+            <div class="car-footer">
+              <div class="price">
+                <div class="original-price">1700K/ngày</div>
+                <div class="discount-price">1390K/ngày</div>
+              </div>
+              <div class="hourly-price">360K giá 3 giờ</div>
+            </div>
+          </div>
+          
+
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Địa điểm nổi bật -->
+    <section class="popular-destinations">
+      <div class="container">
+        <h2 class="section-title">Địa Điểm Nổi Bật</h2>
+        <div class="destinations-grid">
+          <!-- Địa điểm 1 -->
+          <div class="destination-card">
+            <img src="/FrontEnd/img/cho-ben-thanh.jpg" alt="TP. Hồ Chí Minh" loading="lazy" />
+            <div class="destination-overlay">
+              <h3>TP. Hồ Chí Minh</h3>
+              <p>5000 + xe</p>
+            </div>
+          </div>
+          
+          <!-- Địa điểm 2 -->
+          <div class="destination-card">
+            <img src="/FrontEnd/img/lang-chu-tich-ho-chi-minh.png" alt="Hà Nội" loading="lazy" />
+            <div class="destination-overlay">
+              <h3>Hà Nội</h3>
+              <p>2500 + xe</p>
+            </div>
+          </div>
+
+          <!-- Địa điểm 3 -->
+          <div class="destination-card">
+            <img src="/FrontEnd/img/hue.jpg" alt="TP. Huế" loading="lazy"/>
+            <div class="destination-overlay">
+              <h3>Huế</h3>
+              <p>3200 + xe</p>
+            </div>
+          </div>
+
+          <!-- Địa điểm 4 -->
+          <div class="destination-card">
+            <img src="/FrontEnd/img/da-nang.jpg" alt="TP. Đà Nẵng" loading="lazy"/>
+            <div id="info" class="destination-overlay">
+              <h3>Đà Nẵng</h3>
+              <p>1200 + xe</p>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ưu điểm -->
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">Ưu Điểm Của DriveNow</h2>
+        <p class="section-subtitle">
+          Những tính năng giúp bạn dễ dàng hơn khi thuê xe trên DriveNow.
+        </p>
+
+        <div class="features-grid">
+          <!-- Ưu điểm 1 -->
+          <div class="feature-card">
+            <div class="feature-icon">
+              <div class="img-icon">
+              <img src="/FrontEnd/img/tận tâm.jpg" alt="Tận tâm với khách hàng" loading="lazy">
+            </div></div>
+            <h3>Luôn tận tâm hỗ trợ khách hàng</h3>
+            <p>
+              DriveNow luôn hỗ trợ khách hàng một cách tận tâm nhất giúp cho khàng có trải nghiệm thuê xe thoải mái nhất.
+           </p>
+          </div>
+          
+          <!-- Ưu điểm 2 -->
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="/FrontEnd/img/dat-xe-an-toan.jpg" alt="An tâm đặt xe"loading="lazy">
+            </div>
+            <h3>An tâm đặt xe</h3>
+            <p>
+              Không tính phí huỷ chuyến trong vòng 1h sau khi thanh toán giữ chỗ. Hoàn tiền giữ chỗ và bồi thường 100% nếu chủ xe huỷ chuyến trong vòng 7 ngày trước chuyến đi.
+            </p>
+          </div>
+          
+          <!-- Ưu điểm 3 -->
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="/FrontEnd/img/thu-tuc-don-gian.jpg" alt="Thủ tục đơn giản" loading="lazy">
+            </div>
+            <h3>Thủ tục đơn giản</h3>
+            <p>
+              Chỉ cần có CCCD gắn chip (Hoặc Passport) & Giấy phép lái xe là bạn đã đủ điều kiện thuê xe trên DriveNow.
+           </p>
+          </div>
+
+          <!-- Ưu điểm 4 -->
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="/FrontEnd/img/da-dang-xe.jpg" alt="Dòng xe đa dạng" loading="lazy">
+            </div>
+            <h3>Dòng xe đa dạng</h3>
+            <p>
+              Hơn 100 dòng xe cho bạn tuỳ ý lựa chọn: Mini, Sedan, CUV, SUV, MPV, Bán tải...
+           </p>
+          </div>
+
+          <!-- Ưu điểm 5 -->
+          <div class="feature-card">
+            <div class="feature-icon">
+              <div class="imggggg">
+              <img src="/FrontEnd/img/dedangthanhtoan.jpg" alt="Dễ dàng thanh toán" loading="lazy">
+            </div></div>
+            <h3>Dễ dàng thanh toán</h3>
+            <p>
+              Đa dạng hình thức thanh toán: ATM, thẻ Visa & Ví điện tử (Momo, VnPay, ZaloPay, ViettelMoney).
+           </p>
+          </div>
+
+          <!-- Ưu điểm 6 -->
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="/FrontEnd/img/Giao xe tận nơi.jpg" alt="Giao xe tận nơi"loading="lazy">
+            </div>
+            <h3>Giao xe tận nơi</h3>
+            <p>
+              Hơn 100 dòng xe cho bạn tuỳ ý lựa chọn: Mini, Sedan, CUV, SUV, MPV, Bán tải...
+           </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Hướng dẫn đặt xe -->
+    <section class="carbookingguide">
+      <div class="container">
+        <h2 class="section-title">Hướng dẫn đặt xe của DriveNow</h2>
+    
+        <div class="carbookingguide-grid">
+    
+          <!-- Hướng dẫn 1 -->
+          <div class="carbookingguide-icon">
+            <img src="/FrontEnd/img/chọn xe.jpg" alt="Chọn xe" loading="lazy">
+            <h3><span>01. </span>Đặt xe trên WebSite DriveNow</h3>
+            <p>
+              Khách hàng có thể vào website DriveNow lựa chọn xe phù hợp với sở thích và mục đích sử dụng.
+            </p>
+          </div>
+    
+          <!-- Hướng dẫn 2 -->
+          <div class="carbookingguide-icon">
+            <img src="/FrontEnd/img/nhận xe.jpg" alt="Nhận xe"loading="lazy">
+            <h3><span>02. </span>Nhận xe tận nơi</h3>
+            <p>
+              Nhân viên của DriveNow sẽ giao xe tận nơi nếu khách hàng chọn địa điểm nhận xe phù hợp.
+            </p>
+          </div>
+    
+          <!-- Hướng dẫn 3 -->
+          <div class="carbookingguide-icon">
+            <div class="imggg">
+            <img src="/FrontEnd/img/Lái xe.jpg" alt="Sử dụng xe" loading="lazy"></div>
+            <div class="sizeh3">
+            <h3><span>03. </span>Sử dụng xe</h3></div>
+            <p>
+              Khách hàng sử dụng xe trong thời gian đã đặt và được hỗ trợ 24/7 nếu có sự cố xảy ra.
+            </p>
+          </div>
+    
+          <!-- Hướng dẫn 4 -->
+          <div class="carbookingguide-icon">
+            <img src="/FrontEnd/img/thanh toán trả xe.jpg" alt="Trả xe" loading="lazy">
+            <h3><span>04. </span>Trả xe</h3>
+            <p>
+              Khách hàng trả xe đúng thời gian, đúng địa điểm hoặc yêu cầu nhân viên đến nhận xe tại nơi bạn chọn.
+            </p>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Dịch vụ -->
+    <section class="services">
+      <div class="container">
+        <h2 class="section-title">Dịch Vụ Của DriveNow</h2>
+
+        <div class="services-grid">
+          <!-- Dịch vụ 1 -->
+          <div class="service-card">
+            <div class="service-content">
+              <h3>Xe đã sẵn sàng.<br />Bắt đầu hành trình ngay!</h3>
+              <p>
+                Tự tay cầm lái chiếc xe bạn yêu thích<br />cho hành trình thêm
+                hứng khởi.
+              </p>
+              <a href="#" class="btn">Thuê xe tự lái</a>
+            </div>
+            <div class="service-image">
+              <img
+                src="/FrontEnd/img/bat-dau-hanh-trinh-1.jpg"
+                alt="Bắt đầu thuê xe"
+              />
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Phần chân -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <img
+              src="/FrontEnd/img/DriveNow-XoaPhong.png"
+              alt="DriveNow"
+              class="footer-logo"
+            />
+            <div class="contact-info">
+              <div class="phone">
+                <span class="label">0123 4567</span>
+                <p>Tổng đài hỗ trợ: 7AM - 10PM</p>
+              </div>
+              <div class="email">
+                <a href="mailto:drivenow@gmail.com">drivenow@gmail.com</a>
+                <a href="mailto:drivenow@gmail.com"><p>Gửi mail cho DriveNow</p></a>
+              </div>
+            </div>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <div class="link-group">
+              <h3>Chính Sách</h3>
+              <ul>
+                <li><a href="/FrontEnd/User/Chinhsachvaquydinh.html">Chính sách và quy định</a></li>
+                <li><a href="/FrontEnd/User/Chinhsachvaquydinh.html">Quy chế hoạt động</a></li>
+                <li><a href="#">Bảo mật thông tin</a></li>
+                <li><a href="#">Giải quyết tranh chấp</a></li>
+              </ul>
+            </div>
+            <div class="link-group">
+              <h3>Tìm Hiểu Thêm</h3>
+              <ul>
+                <li><a href="#">Hướng dẫn chung</a></li>
+                <li><a href="#">Hướng dẫn đặt xe</a></li>
+                <li><a href="#">Hướng dẫn thanh toán</a></li>
+                <li><a href="#">Hỏi và trả lời</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="payment-methods">
+          <h3>Phương thức thanh toán</h3>
+          <div class="payment-icons">
+            <img
+              src="/FrontEnd/img/momo.png"
+              alt="MoMo"
+            />
+            <img
+              src="/FrontEnd/img/vnpay.jpg"
+              alt="VNPay"
+            />
+            <img
+              src="/FrontEnd/img/zalopay.png"
+              alt="ZaloPay"
+            />
+            <img
+              src="/FrontEnd/img/logo-viettel-money.jpg"
+              alt="VTMoney"
+            />
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>&copy; Công ty Cổ Phần DriveNow</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/FrontEnd/js/user.js"></script>
+  </body>
+</html>

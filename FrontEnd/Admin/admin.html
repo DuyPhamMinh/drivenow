@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý DriveNow</title>
+    <link rel="stylesheet" href="/FrontEnd/css/admin.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/FrontEnd/img/DriveNow-XoaPhong.png"
+    />
+  </head>
+  <body>
+    <div class="admin-container">
+      <aside class="sidebar">
+        <img src="/FrontEnd/img/DriveNow-XoaPhong.png" alt="DriveNow" />
+        <nav>
+          <ul>
+            <li><a href="#dashboard">Bảng điều khiển</a></li>
+            <li><a href="#car-management">Quản lý xe</a></li>
+            <li><a href="#user-management">Người dùng</a></li>
+            <li><a href="#orders">Đơn thuê</a></li>
+            <li><a href="#settings">Cài đặt</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="admin-header">
+          <h1>Quản Lý DriveNow</h1>
+          <div class="user-info"><b>.</b></div>
+        </header>
+
+        <!-- Menu -->
+        <section id="dashboard" class="admin-section active">
+          <h2>Bảng điều khiển</h2>
+          <div class="dashboard">
+            <div class="card">Tổng xe: <span>120</span></div>
+            <div class="card">Người dùng: <span>350</span></div>
+            <div class="card">Đơn thuê hôm nay: <span>25</span></div>
+            <div class="card">Doanh thu: <span>15 triệu</span></div>
+          </div>
+        </section>
+
+        <section id="car-management" class="admin-section">
+          <h2>Quản lý xe</h2>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Tên xe</th>
+                <th>Biển số</th>
+                <th>Trạng thái</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>BMW i8 2016</td>
+                <td>51A-123.45</td>
+                <td>Sẵn sàng</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Toyota Vios</td>
+                <td>51B-678.90</td>
+                <td>Sẵn sàng</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Kia Morning</td>
+                <td>51B-648.90</td>
+                <td>Đang cho thuê</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Mercedes C200 2021</td>
+                <td>51B-612.90</td>
+                <td>Sẵn sàng</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="user-management" class="admin-section">
+          <h2>Quản lý người dùng</h2>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Tên</th>
+                <th>Email</th>
+                <th>Vai trò</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Nguyễn Văn A</td>
+                <td>a@example.com</td>
+                <td>Khách</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Lê Thị B</td>
+                <td>b@example.com</td>
+                <td>Chủ xe</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="orders" class="admin-section">
+          <h2>Đơn thuê xe</h2>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Mã đơn</th>
+                <th>Khách hàng</th>
+                <th>Xe</th>
+                <th>Ngày thuê</th>
+                <th>Trạng thái</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ORD001</td>
+                <td>Trần Văn C</td>
+                <td>Kia Morning</td>
+                <td>2025-04-24</td>
+                <td>Đã duyệt</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="settings" class="admin-section">
+          <h2>Cài đặt</h2>
+          <form class="settings-form">
+            <label>Email hệ thống:</label>
+            <input type="email" placeholder="admin@example.com" />
+            <label>Mật khẩu:</label>
+            <input type="password" placeholder="********" />
+            <button>Lưu thay đổi</button>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script src="/FrontEnd/js/admin.js"></script>
+  </body>
+</html>

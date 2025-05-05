@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng kí</title>
+    <link rel="stylesheet" href="/FrontEnd/css/styles.css" />
+    <!-- Kiểu cho các icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/FrontEnd/img/DriveNow-XoaPhong.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Phần đầu -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="/FrontEnd/User/Trangchu.html">
+              <img
+                src="/FrontEnd/img/DriveNow-XoaPhong.png"
+                alt="DriveNow"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <nav class="nav-menu">
+            <ul>
+              <li><a href="/FrontEnd/User/Trangchu.html">Trang chủ</a></li>
+              <li><a href="/FrontEnd/User/Gioithieu.html">Giới thiệu</a></li>
+              <li><a href="#">Trở thành chủ xe</a></li>
+            </ul>
+          </nav>
+          <div class="auth-buttons">
+            <button class="btn-login">
+              <a href="/FrontEnd/User/Dangnhap.html">Đăng nhập</a>
+            </button>
+            <button class="btn-register">
+              <a href="/FrontEnd/User/Dangki.html">Đăng ký</a>
+            </button>
+          </div>
+          <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Đăng nhập -->
+    <body>
+      <!-- Đăng ký -->
+      <div class="register-page-wrapper">
+        <div class="register-container">
+          <h2>Đăng ký</h2>
+          <form action="" method="" onsubmit="return checkPasswordMatch()">
+            <input
+              type="text"
+              name="username"
+              placeholder="Tên đăng nhập"
+              required
+            />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Mật khẩu"
+              required
+            />
+            <input
+              type="password"
+              id="repassword"
+              name="repassword"
+              placeholder="Nhập lại mật khẩu"
+              required
+            />
+            <input type="email" name="email" placeholder="Email" required />
+            <input
+              type="tel"
+              name="number"
+              placeholder="Số điện thoại"
+              required
+            />
+            <button type="submit">Đăng ký</button>
+          </form>
+          <p>
+            Đã có tài khoản?
+            <a href="/FrontEnd/User/Dangnhap.html">Đăng nhập</a>
+          </p>
+        </div>
+      </div>
+    </body>
+
+    <!-- Phần chân -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <img
+              src="/FrontEnd/img/DriveNow-XoaPhong.png"
+              alt="DriveNow"
+              class="footer-logo"
+              loading="lazy"
+            />
+            <div class="contact-info">
+              <div class="phone">
+                <span class="label">0123 4567</span>
+                <p>Tổng đài hỗ trợ: 7AM - 10PM</p>
+              </div>
+              <div class="email">
+                <a href="mailto:drivenow@gmail.com">drivenow@gmail.com</a>
+                <a href="mailto:drivenow@gmail.com"
+                  ><p>Gửi mail cho DriveNow</p></a
+                >
+              </div>
+            </div>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <div class="link-group">
+              <h3>Chính Sách</h3>
+              <ul>
+                <li>
+                  <a href="/FrontEnd/User/Chinhsachvaquydinh.html"
+                    >Chính sách và quy định</a
+                  >
+                </li>
+                <li><a href="#quyche">Quy chế hoạt động</a></li>
+                <li><a href="#">Bảo mật thông tin</a></li>
+                <li><a href="#">Giải quyết tranh chấp</a></li>
+              </ul>
+            </div>
+            <div class="link-group">
+              <h3>Tìm Hiểu Thêm</h3>
+              <ul>
+                <li><a href="#">Hướng dẫn chung</a></li>
+                <li><a href="#">Hướng dẫn đặt xe</a></li>
+                <li><a href="#">Hướng dẫn thanh toán</a></li>
+                <li><a href="#">Hỏi và trả lời</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="payment-methods">
+          <h3>Phương thức thanh toán</h3>
+          <div class="payment-icons">
+            <img src="/FrontEnd/img/momo.png" alt="MoMo" />
+            <img src="/FrontEnd/img/vnpay.jpg" alt="VNPay" />
+            <img src="/FrontEnd/img/zalopay.png" alt="ZaloPay" />
+            <img src="/FrontEnd/img/logo-viettel-money.jpg" alt="VTMoney" />
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>&copy; Công ty Cổ Phần DriveNow</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/FrontEnd/js/user.js"></script>
+  </body>
+</html>
